@@ -1,0 +1,23 @@
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+
+  //default custom styles
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 3px;
+  outline: none;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "\2713"; //HTML Unicode symbol for check mark - U+2713
+  display: grid;
+  place-content: center;
+  color: #000;
+  font-weight: bold;
+  font-size: small;
+}
